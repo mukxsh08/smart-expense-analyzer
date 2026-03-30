@@ -70,3 +70,7 @@ def root():
 @app.get("/health", tags=["Root"])
 def health():
     return {"status": "ok"}
+
+@app.get("/")
+def read_root():
+    return {"message": "Backend is running"}
